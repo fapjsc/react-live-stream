@@ -21,3 +21,7 @@ google oauth 的 api
 7.初始化: window.gapi.client.init({clientId: 'your id', scope: 'email'})
 
 8.gapi.auth2.getAuthInstance
+
+redux-form
+如果是 npm v7
+npm install redux-form --legacy-peer-deps
