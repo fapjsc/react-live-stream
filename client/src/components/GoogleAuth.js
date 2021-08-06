@@ -9,7 +9,7 @@ const GoogleAuth = ({ trySignOut, trySignIn, signState }) => {
   const handleAuthChange = useCallback(
     signState => {
       if (signState) {
-        trySignIn();
+        trySignIn(auth.current.currentUser.get().getId());
       } else {
         trySignOut();
       }
