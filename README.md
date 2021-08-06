@@ -26,8 +26,11 @@ redux-form
 如果是 npm v7
 npm install redux-form --legacy-peer-deps
 
-使用 redux-form 作表單驗證的時候,需要將 help function（handleSubmit, handleValidate, handleError...等）寫在組建外面
+使用 redux-form 作表單驗證的時候,需要將 render elements 的 helper function 寫在組建外面
 https://redux-form.com/8.3.0/examples/syncvalidation/
 
 redux-form 的 event
 https://redux-form.com/6.0.0-rc.5/docs/api/field.md/
+
+json-server 指定 host 和 port
+json-server --host 192.168.1.XXX my_file.json
