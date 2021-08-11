@@ -33,4 +33,7 @@ redux-form 的 event
 https://redux-form.com/6.0.0-rc.5/docs/api/field.md/
 
 json-server 指定 host 和 port
-json-server --host 192.168.1.XXX my_file.json
+json-server --host 192.168.1.XXX my_file.
+
+使用自定義 history, 因為需要在 action 裡面使用 history 跳轉頁面, 因此自定義 history obj, (history.js),
+在 App.js 中的 BrowserRouter 需改為 Router

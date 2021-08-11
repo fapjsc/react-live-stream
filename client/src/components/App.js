@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 //Components
 import StreamList from '../components/streams/StreamList';
@@ -10,10 +10,13 @@ import StreamShow from '../components/streams/SteamShow';
 // Layout
 import Header from './layout/Header';
 
+import history from '../history';
+
 const App = () => {
   return (
     <div className="ui container">
-      <BrowserRouter>
+      {/* 原本是BrowserRouter, 為了自定義的history生效, 因此改為Router*/}
+      <Router history={history}>
         <Header />
         <Switch>
           <Route component={StreamList} exact path="/" />
@@ -22,7 +25,7 @@ const App = () => {
           <Route component={StreamDelete} exact path="/streams/delete" />
           <Route component={StreamShow} exact path="/streams/show" />
         </Switch>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };

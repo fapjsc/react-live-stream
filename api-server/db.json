@@ -1,59 +1,52 @@
 {
   "streams": [
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdf",
+      "description": "123421432",
+      "userId": "101199107453366234338",
       "id": 1
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfsaf",
+      "description": "asdfasdfsdasadf",
+      "userId": null,
       "id": 2
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfa",
+      "description": "asdfasfdfsa",
+      "userId": "101199107453366234338",
       "id": 3
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfasf",
+      "description": "asfsafsdf",
+      "userId": "101199107453366234338",
       "id": 4
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfasfasdfas",
+      "description": "asfsafsdfasdfsd",
+      "userId": "101199107453366234338",
       "id": 5
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfa",
+      "description": "asdfas",
+      "userId": "101199107453366234338",
       "id": 6
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "asdfas",
+      "description": "asdfsadfa",
+      "userId": "101199107453366234338",
       "id": 7
     },
     {
-      "title": "1234",
-      "description": "asdf",
+      "title": "adsf2342",
+      "description": "asdfasdf",
+      "userId": "101199107453366234338",
       "id": 8
-    },
-    {
-      "title": "adsf",
-      "description": "asdf",
-      "id": 9
-    },
-    {
-      "title": "1234",
-      "description": "asdf",
-      "id": 10
-    },
-    {
-      "title": "adf",
-      "description": "asdf",
-      "id": 11
     }
   ]
 }
