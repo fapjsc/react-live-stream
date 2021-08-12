@@ -27,8 +27,6 @@ export const createStream = formValues => async (dispatch, getState) => {
 
 export const fetchStreamList = () => async dispatch => {
   const response = await streams.get('/streams');
-  console.log(response.data);
-
   dispatch({ type: FETCH_STREAM_LIST, payload: response.data });
 };
 

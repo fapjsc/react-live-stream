@@ -6,25 +6,31 @@ import { connect } from 'react-redux';
 import { fetchStreamList } from '../../actions';
 
 const StreamList = props => {
+  //==== Props ====//
   const { fetchStreamList, streams, currentUserId, isSignedIn } = props;
-  console.log(streams, 'streams');
 
-  // Help Function
-  const renderAdminHelper = stream => {
+  //==== UseEffect ====//
+  useEffect(() => {
+    fetchStreamList();
+  }, [fetchStreamList]);
+
+  //==== Render Elements ====//
+  const renderAdminBtnEl = stream => {
     if (stream.userId === currentUserId) {
       return (
         <div className="right floated content">
-          <button className="ui button primary">Edit</button>
+          <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
+            Edit
+          </Link>
           <button className="ui button negative">Delete</button>
         </div>
       );
     }
   };
 
-  // Render Elements
   const renderStreamEl = streams.map(stream => (
     <div className="item" key={stream.id}>
-      {renderAdminHelper(stream)}
+      {renderAdminBtnEl(stream)}
 
       <i className="large middle aligned icon camera" />
       <div className="content">
@@ -45,10 +51,6 @@ const StreamList = props => {
       );
     }
   };
-
-  useEffect(() => {
-    fetchStreamList();
-  }, [fetchStreamList]);
 
   return (
     <div>
