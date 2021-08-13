@@ -1,4 +1,10 @@
-import { CREATE_STREAM, FETCH_STREAM_LIST, FETCH_STREAM_SINGLE, UPDATE_STREAM, DELETE_STREAM } from '../actions/types';
+import {
+  CREATE_STREAM,
+  FETCH_STREAM_LIST,
+  FETCH_STREAM_SINGLE,
+  UPDATE_STREAM,
+  DELETE_STREAM,
+} from '../actions/types';
 
 const INITIAL_STATE = {};
 
